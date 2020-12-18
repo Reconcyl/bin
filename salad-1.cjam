@@ -1,0 +1,5 @@
+e# do a weird expansion process on strings
+q{_3ew:mr.{}e_}3*
+e# ^           ^
+e# |           |
+e# -- mixing   -- exponential blowup

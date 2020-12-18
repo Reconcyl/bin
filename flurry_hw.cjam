@@ -1,0 +1,4 @@
+e# Take a string from STDIN and generate a Flurry program that prints than string
+e# when run with the `-bnn` IO config.
+
+q{i"{{}}"\2b(;{\a"<%s[<><<>()>{{}}]>"e%\{a"[<><<>()>%s]"e%}&}/a"[()()(%s)]"e%}%

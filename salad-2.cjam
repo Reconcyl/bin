@@ -1,0 +1,6 @@
+e# do another weird expansion process on strings
+e# (this one has less repetition)
+q{__,{2/{1Kmr3<2*-%}%e_(+}*.+e_}3*
+e#           ^                  ^
+e#           |                  |
+e#           -- mixing          -- exponential blowup

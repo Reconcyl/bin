@@ -1,0 +1,7 @@
+e# A reasonable (but not optimal) Momema minimizer.
+e# Things it doesn't do:
+e# - Remove spaces between digits when possible (e.g. `*0 1` -> `*01`)
+e# - Minimize jump names
+e# You will have to do those manually.
+
+qN/{'#/0=}%S*S%S*_,2-{W$m<3<(+(Sc=\A,s-*},:):X;ee{(aX&,!*}%
