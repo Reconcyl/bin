@@ -1,5 +1,3 @@
-#!/usr/bin/env ocaml
-
 (* Keep a running tally of the quantity of each unique line
  * passed through STDIN so far - this can be used to evaluate
  * the quality of a random number generator, for example.
