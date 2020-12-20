@@ -24,6 +24,7 @@ fn main() -> io::Result<()> {
     while stdin.read_until(b'\n', &mut line)? != 0 {
         stdout.write(&indent)?;
         stdout.write(&line)?;
+        line.clear();
     }
     Ok(())
 }
