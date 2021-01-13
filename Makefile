@@ -1,4 +1,4 @@
-all: bb26 ind line_count pick print_context
+all: bb26 ind line_count pick print_context rmfile
 
 bb26: bb26.rs
 	rustc -O bb26.rs
@@ -15,6 +15,9 @@ pick: pick.c
 print_context: print_context.rs
 	rustc -O print_context.rs
 
+rmfile: rmfile.rs
+	rustc -O rmfile.rs
+
 clean:
 	rm -f line_count line_count.cmi line_count.cmx line_count.o
-	rm -f bb26 ind pick print_context
+	rm -f bb26 ind pick print_context rmfile
