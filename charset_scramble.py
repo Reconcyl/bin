@@ -13,7 +13,7 @@ formats = {}
 formats["10"]   = "-", count(numer, 10)
 formats["16"]   = "-", count(numer + "abcdef", 16)
 formats["36"]   = "",  count(numer + lower, 36)
-formats["64+_"] = "=", count(numer + alpha + "+_", 64)
+formats["64-_"] = "=", count(numer + alpha + "-_", 64)
 formats["64@/"] = "=", count(numer + alpha + "@/", 64)
 formats["62"]   = "=", count(numer + alpha, 62)
 formats["58"]   = "=", count(alp48 + numer, 58)
@@ -24,7 +24,7 @@ available charsets:
 10    decimal
 16    hex
 36    a-z0-9
-64+_  base64, special chars '+' '_'
+64-_  base64, special chars '-' '_'
 64@/  base64, special chars '@' '/'
 62    a-zA-Z0-9
 58    a-zA-Z0-9 minus 'l' 'I' 'o' 'O'""", file=sys.stderr)
