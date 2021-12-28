@@ -25,7 +25,7 @@ available charsets:
 64+_  base64, special chars '+' '_'
 64@/  base64, special chars '@' '/'
 62    a-zA-Z0-9
-58    a-zA-Z0-9 minus 'l' 'I' 'o' 'O'""")
+58    a-zA-Z0-9 minus 'l' 'I' 'o' 'O'""", file=sys.stderr)
     sys.exit(1)
 
 preserved, charset = formats[sys.argv[1]]
