@@ -4,7 +4,6 @@
 # This is useful to pass as a custom cc for compilers in high-level
 # languages that target C.
 
-from colorama import Fore
 import shlex, sys, subprocess
 
 args = sys.argv[:]
