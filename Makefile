@@ -1,4 +1,7 @@
-all: bb26 ind line_count pick print_context rmfile vlc_keys.min.js
+all: chr bb26 ind line_count pick print_context rmfile vlc_keys.min.js
+
+chr: chr.rs
+	rustc -O $<
 
 bb26: bb26.rs
 	rustc -O $<
@@ -24,4 +27,4 @@ vlc_keys.min.js: vlc_keys.js
 
 clean:
 	rm -f line_count line_count.cmi line_count.cmx line_count.o
-	rm -f bb26 ind pick print_context rmfile vlc_keys.min.js
+	rm -f chr bb26 ind pick print_context rmfile vlc_keys.min.js
