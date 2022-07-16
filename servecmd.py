@@ -51,7 +51,8 @@ class Server(BaseHTTPRequestHandler):
             self.send_response(404)
             self.wfile.write(b"404 - not found")
 
-print("starting server...")
-httpd = HTTPServer(("localhost", 8080), Server)
+port = 8080
+print("starting server on port {}...".format(port))
+httpd = HTTPServer(("0.0.0.0", port), Server)
 print("running server...")
 httpd.serve_forever()
